@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    console.log("SIMPLE")
+    //  task-1/converting into uppercase 
+    console.log(" TASK-1 // Converting into UpperCase")
+    let u=prompt("Enter any String for o/p in Uppercase")
+    console.log(u.toUpperCase())
+
+    //  task-2
+    console.log("TASK-2 // Converting into LowerCase") 
+    let l=prompt("Enter any String for o/p in Lowercase")
+    console.log(l.toLowerCase())
+
+    //  task-3
+    console.log("TASK-3 // Reverse a String")
+    let str = prompt("Enter any String to reverse the string")
+    let r=str.split("").reverse().join("");
+    console.log(r)
+
+
+
+    console.log("ADVANCED")
+    // TASK-1
+    console.log("TASK-1 // Validating Username")
+    let un=prompt("Enter UserName")
+    console.log(un.length)
+    if(un.length>=5 && un.length<=15){
+    console.log("U Have Entered A Valid Username")
+    }
+    else{
+        console.log("U Have Enterded A Invalid Username")
+    }
+
+
+    // TASK-2
+    console.log("TASK-2 // Email Formatter")
+    let f1=prompt("Enter UR First Name")
+    let l1=prompt("Enter UR Last Name")
+    fn=f1.toLocaleLowerCase();
+    ln=l1.toLocaleLowerCase();
+    console.log("UR Email is",fn.concat(".",ln,"@gmail.com"))
+
+
+    // TASK-3
+    console.log("TASK-3 // Word Counter")
+    let wc=prompt("Enter Any Sentence")
+    w = wc.split(" ")
+    console.log(w)
+    console.log(w.length);
+
+    // TASK-4
+    console.log("TASK-4 // Palindrome Checker")
+    let  pc=prompt("Enter Any Word to know Palindrome")
+    let  p=pc.split("").reverse().join("")
+    console.log(p)
+    if(pc.toLowerCase==p.toLowerCase){
+        console.log("UR Sentence is a Palindrome")
+    }
+    else{
+        console.log("UR Sentence is a not a Palindrome")
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
